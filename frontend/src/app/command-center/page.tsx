@@ -420,13 +420,13 @@ export default function CommandCenterPage() {
 
         <div className="grid md:grid-cols-6 gap-5 mb-8">
           {[
-            ["127", "Agents Executed Today", Users],
-            ["354", "Agent Handoffs", GitBranch],
-            ["98.4%", "Workflow Success Rate", ShieldCheck],
-            ["742", "Band Messages Sent", Activity],
-            ["91", "Candidates Processed", SearchCheck],
-            ["89%", "Average Hiring Score", BadgeCheck],
-          ].map(([value, label, Icon]) => (
+            {value: "127", label: "Agents Executed Today", Icon: Users},
+            {value: "354", label: "Agent Handoffs", Icon: GitBranch},
+            {value: "98.4%", label: "Workflow Success Rate", Icon: ShieldCheck},
+            {value: "742", label: "Band Messages Sent", Icon: Activity},
+            {value: "91", label: "Candidates Processed", Icon: SearchCheck},
+            {value: "89%", label: "Average Hiring Score", Icon: BadgeCheck},
+          ].map(({value, label, Icon}) => (
             <motion.div
               key={label}
               initial={{ opacity: 0, y: 12 }}
