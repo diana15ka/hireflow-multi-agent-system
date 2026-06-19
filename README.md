@@ -155,10 +155,8 @@ You can test the deployed application using the following demo account:
 ### Demo Credentials
 
 Email:
-```text
 diana@test.com
 Password:
-```text
 $1$7$492
 ---
 
